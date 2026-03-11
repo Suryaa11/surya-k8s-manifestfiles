@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: photo-pod-rs
+  namespace: surya-ns
+  labels:
+    app: photo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: photo-template
+  template:
+    metadata:
+      labels:
+        app: photo-template
+    spec:
+      containers:
+        name: photo-container
+        image: suryaa112003/photo-studio:v1.1.0
+        ports:
+          - containerPort: 3000
