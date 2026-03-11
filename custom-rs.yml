@@ -16,7 +16,7 @@ spec:
         app: photo-template
     spec:
       containers:
-        name: photo-container
-        image: suryaa112003/photo-studio:v1.1.0
-        ports:
+        - name: photo-container
+          image: suryaa112003/photo-studio:v1.1.0
+          ports:
           - containerPort: 3000
