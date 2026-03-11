@@ -10,7 +10,7 @@ spec: # It defines the behaviour of replica set
   selector:  # It defines how the ReplicaSet finds which Pod to manage
     matchLabels:
       app: web
-  templates: # It contains Pod definition
+  template: # It contains Pod definition
     metadata: 
       labels: 
         app: web
