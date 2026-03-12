@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: flower-pod-rs
+  namespace: surya-ns
+  labels: 
+    app: flower-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flower-replica
+  template:
+    metadata:
+      labels:
+        app: flower-replica
+    spec:
+      containers:
+        - name: flower-container
+          image: suryaa112003/flower-web:v1.1.0
+          ports:
+            - containerPort: 3015
+
+      
+    
