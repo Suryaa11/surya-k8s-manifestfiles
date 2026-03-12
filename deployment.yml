@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ey-cart-Deployment
+  name: ey-cart-deployment
   namespace: surya-ns
   labels:
     app: ey-cart
