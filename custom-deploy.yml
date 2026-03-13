@@ -17,7 +17,7 @@ spec:
       app: fitness-template-label
   template:
     metadata:
-      label: 
+      labels: 
         app: fitness-template-label
     spec:
       containers:
