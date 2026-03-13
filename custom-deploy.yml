@@ -24,7 +24,7 @@ spec:
         - name: fitness-cont
           image: muralisocial123/fitness-app:v1.0.1
           ports:
-            - containerPort: 3000
+            - containerPort: 5000
 ---
 apiVersion: v1
 kind: Service
@@ -36,6 +36,6 @@ spec:
     app: fitness-template-label
   ports:
     - port: 3001 # It is a service port number. We are using to expose the application to internet
-      targetPort: 3000 # Same port number as container port
+      targetPort: 5000 # Same port number as container port
       protocol: TCP
   type: ClusterIP
