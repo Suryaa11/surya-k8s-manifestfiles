@@ -22,6 +22,6 @@ spec:
     spec:
       containers:
         - name: ey-cart-container
-          image: muralisocial123/flipkart-app-web:v1.1.0
+          image: suryaa112003/flower-web:v1.1.0
           ports:
-            - containerPort: 80
+            - containerPort: 3015
